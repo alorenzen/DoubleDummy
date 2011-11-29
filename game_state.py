@@ -4,7 +4,7 @@ Classes to represent Game State.
 """
 class CardNotPlayable(Exception):
     """
-    Raised when a which is not allowed is actually played in a trick.
+    Raised when a card which is not allowed is actually played in a trick.
     """
     pass
 
@@ -18,6 +18,9 @@ class Card:
 
     def __str__(self):
         return self.suit + str(self.value)
+
+    def __repr__(self):
+        return self.__str__()
 
 class Suit:
     CLUBS    = 'C'
