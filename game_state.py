@@ -2,25 +2,29 @@
 Classes to represent Game State.
 @author t. andrew lorenzen, e.d. Outterson
 """
+from collections import namedtuple
+
 class CardNotPlayable(Exception):
     """
     Raised when a card which is not allowed is actually played in a trick.
     """
     pass
 
-class Card:
+class Card(namedtuple('Card','suit value')):
     """
     A Single Card, which has a suit and a value
     """
-    def __init__(self, suit, value):
-        self.suit = suit
-        self.value = value
+    __slots__ = ()
+    """
+    helps keep memory requirements low 
+    by preventing the creation of instance dictionaries
+    """
 
     def __str__(self):
         return self.suit + str(self.value)
-
     def __repr__(self):
         return self.__str__()
+
 
 class Suit:
     CLUBS    = 'C'
@@ -54,8 +58,10 @@ class Trick:
         return len(self.cards) == 4
 
     def winner(self):
-        return self.cards[max([x for x in self.cards.keys() if x.suit == self.suit],
-                              lambda x: x.value)]
+        winning_card = max([x for x in self.cards.keys() if x.suit == self.suit],
+                           key=lambda x: x.value)
+        return self.cards[winning_card]
+                              
 
 
 class GameState:
@@ -126,15 +132,22 @@ class Deal:
         self.west_cards = west_cards
         self.starting_player = starting_player
 
+
 if __name__ == '__main__':
     north_cards = [Card(Suit.CLUBS,3),Card(Suit.HEARTS,3)]
-    south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,1)]
-    east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,2)]
-    west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,1)]
-    start = Deal(north_cards,east_cards,south_cards,west_cards,Player.NORTH)
+    south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
+    east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,4)]
+    west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
+    start = Deal(north_cards,east_cards,south_cards,west_cards,Player.WEST)
     state = GameState.create_initial(start)
-    newState = state.play_card(state.get_actions()[0])
-    print newState.get_actions()
+    for x in range(0,4):
+        print state.get_next_player()
+        actions = state.get_actions()
+        print actions
+        state = state.play_card(actions[0])
+    print map(lambda x: x.suit + str(x.cards),state.tricks)
+    print state.get_next_player()
+
     
 
 
