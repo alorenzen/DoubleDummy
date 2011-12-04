@@ -1,6 +1,6 @@
 """
 Classes to represent Game State.
-@author t. andrew lorenzen
+@author t. andrew lorenzen, e.d. Outterson
 """
 class CardNotPlayable(Exception):
     """
