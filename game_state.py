@@ -45,10 +45,12 @@ class Player:
             WEST:NORTH}
 
 class Trick:
+#defines the parameters for any individual trick in a game
     def __init__(self):
         self.cards = {}
         self.suit = Suit.NONE
 
+#if you play a certain card, set your suit to be that card's suit
     def play_card(self,card,player):
         self.cards[card] = player
         if self.suit == Suit.NONE:
@@ -147,7 +149,3 @@ if __name__ == '__main__':
         state = state.play_card(actions[0])
     print map(lambda x: x.suit + str(x.cards),state.tricks)
     print state.get_next_player()
-
-    
-
-
