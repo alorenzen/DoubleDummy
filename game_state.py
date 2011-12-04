@@ -1,6 +1,6 @@
 """
 Classes to represent Game State.
-@author t. andrew lorenzen
+@author t. andrew lorenzen, e.d. Outterson
 """
 class CardNotPlayable(Exception):
     """
@@ -41,10 +41,12 @@ class Player:
             WEST:NORTH}
 
 class Trick:
+#defines the parameters for any individual trick in a game
     def __init__(self):
         self.cards = {}
         self.suit = Suit.NONE
 
+#if you play a certain card, set your suit to be that card's suit
     def play_card(self,card,player):
         self.cards[card] = player
         if self.suit == Suit.NONE:
@@ -135,6 +137,3 @@ if __name__ == '__main__':
     state = GameState.create_initial(start)
     newState = state.play_card(state.get_actions()[0])
     print newState.get_actions()
-    
-
-
