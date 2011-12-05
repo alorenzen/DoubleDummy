@@ -39,6 +39,9 @@ class Player:
     EAST  = 'East'
     WEST  = 'West'
 
+    NS = [NORTH,SOUTH]
+    EW = [EAST,WEST]
+
     NEXT = {NORTH:EAST,
             EAST:SOUTH,
             SOUTH:WEST,
@@ -46,15 +49,25 @@ class Player:
 
 class Trick:
 #defines the parameters for any individual trick in a game
-    def __init__(self):
-        self.cards = {}
-        self.suit = Suit.NONE
+    def __init__(self,prevTrick = None):
+        if prevTrick != None:
+            self.cards = prevTrick.cards.copy()
+            self.suit = prevTrick.suit
+        else:
+            self.cards = {}
+            self.suit = Suit.NONE
+
+    def __repr__(self):
+        return str(self.cards)
 
 #if you play a certain card, set your suit to be that card's suit
     def play_card(self,card,player):
         self.cards[card] = player
         if self.suit == Suit.NONE:
             self.suit = card.suit
+
+    def is_new_trick(self):
+        return len(self.cards) == 0
 
     def finished(self):
         return len(self.cards) == 4
@@ -71,7 +84,7 @@ class GameState:
         if prevState != None:
             self.hands = prevState.hands.copy()
             self.next_player = prevState.next_player
-            self.current_trick = prevState.current_trick
+            self.current_trick = Trick(prevState.current_trick)
             self.tricks = prevState.tricks
         else:
             self.hands = {}
@@ -88,6 +101,9 @@ class GameState:
         g.hands[Player.WEST] = starting_deal.west_cards
         g.next_player = starting_deal.starting_player
         return g
+
+    def is_new_trick(self):
+        return self.current_trick.is_new_trick()
     
     def get_next_player(self):
         return self.next_player
@@ -109,6 +125,7 @@ class GameState:
 
     def play_card(self,card):
         if card not in self.get_actions():
+            print self.next_player,self.hands[self.next_player],card,self.current_trick
             raise CardNotPlayable()
         current_hand = self.hands[self.next_player]
         nextState = GameState(self)
@@ -123,7 +140,13 @@ class GameState:
         return nextState
 
     def get_NS_trick_count(self):
-        return len([x for x in tricks if x.winner == NORTH or x.winner == SOUTH])
+        return len([x for x in self.tricks if x in Player.NS])
+
+    def tricks_left(self):
+        return max(map(lambda x: len(x),self.hands.values()))
+    
+    def did_NS_win_last_trick(self):
+        return self.tricks[len(self.tricks)-1].winner() in Player.NS
 
 
 class Deal:
