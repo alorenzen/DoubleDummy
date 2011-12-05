@@ -47,6 +47,11 @@ class Player:
             SOUTH:WEST,
             WEST:NORTH}
 
+    TEAM = {NORTH:NS,
+            SOUTH:NS,
+            EAST:EW,
+            WEST:EW}
+
 class Trick:
 #defines the parameters for any individual trick in a game
     def __init__(self,prevTrick = None):
@@ -145,8 +150,14 @@ class GameState:
     def tricks_left(self):
         return max(map(lambda x: len(x),self.hands.values()))
     
-    def did_NS_win_last_trick(self):
-        return self.tricks[len(self.tricks)-1].winner() in Player.NS
+    def team_win_last_trick(self,team):
+        return self.tricks[len(self.tricks)-1].winner() in team
+
+    def state_switch_teams(self,other_state):
+        return self.switch_teams(self.next_player,other_state.next_player)
+
+    def switch_teams(self,old_player,new_player):
+        return (old_player in Player.NS and new_player not in Player.NS) or (old_player not in Player.NS and new_player in Player.NS)
 
 
 class Deal:

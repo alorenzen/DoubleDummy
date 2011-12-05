@@ -9,7 +9,7 @@ def ddsearch(game_state, goal):
     """
     #print goal
     if game_state.tricks_left() == 0:
-        return game_state.did_NS_win_last_trick()
+        return game_state.team_win_last_trick(Player.TEAM[game_state.get_next_player()])
     if goal <= 0:
         return True
     if goal > game_state.tricks_left():
@@ -21,11 +21,17 @@ def ddsearch(game_state, goal):
     for action in actions:
         #print action
         next_state = game_state.play_card(action)
-        if next_state.is_new_trick() and next_state.did_NS_win_last_trick():
-            next_goal = goal - 1
-        else:
-            next_goal = goal
-        result = ddsearch(next_state,next_goal)
+        if game_state.state_switch_teams(next_state):
+            next_goal = game_state.tricks_left() - goal + 1
+            if next_state.is_new_trick():
+                next_goal = next_goal - 1
+            result = not ddsearch(next_state,next_goal)
+        else: 
+            if next_state.is_new_trick():
+                next_goal = goal - 1
+            else:
+                next_goal = goal
+            result = ddsearch(next_state,next_goal)
         #print result
         if result:
             return True
@@ -45,12 +51,13 @@ def search(state):
     return low
 
 if __name__ == '__main__':
-    #north_cards = [Card(Suit.CLUBS,3),Card(Suit.HEARTS,3)]
-    #south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
-    #east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,4)]
-    #west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
-    #start = Deal(north_cards,east_cards,south_cards,west_cards,Player.NORTH)
-    state = GameState.create_initial(Randomhand(10).deal)
+    north_cards = [Card(Suit.CLUBS,3),Card(Suit.HEARTS,3)]
+    south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
+    east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,4)]
+    west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
+    start = Deal(north_cards,east_cards,south_cards,west_cards,Player.WEST)
+    state = GameState.create_initial(start)
+    #state = GameState.create_initial(Randomhand(7).deal)
     print search(state)
 
         
