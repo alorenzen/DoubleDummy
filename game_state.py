@@ -39,6 +39,8 @@ class Player:
     EAST  = 'East'
     WEST  = 'West'
 
+    POSITION = [NORTH,EAST,SOUTH,WEST]
+
     NS = [NORTH,SOUTH]
     EW = [EAST,WEST]
 
@@ -100,10 +102,7 @@ class GameState:
     @classmethod
     def create_initial(cls,starting_deal):
         g = GameState()
-        g.hands[Player.NORTH] = starting_deal.north_cards
-        g.hands[Player.SOUTH] = starting_deal.south_cards
-        g.hands[Player.EAST] = starting_deal.east_cards
-        g.hands[Player.WEST] = starting_deal.west_cards
+        g.hands = starting_deal.hands
         g.next_player = starting_deal.starting_player
         return g
 
@@ -161,20 +160,21 @@ class GameState:
 
 
 class Deal:
-    def __init__(self, north_cards, east_cards, south_cards, west_cards, starting_player = Player.WEST):
-        self.north_cards = north_cards
-        self.east_cards = east_cards
-        self.south_cards = south_cards
-        self.west_cards = west_cards
+    def __init__(self, hands, starting_player = Player.WEST):
+        self.hands = hands
         self.starting_player = starting_player
+
+    def isValidDeal(self):
+        return True
 
 
 if __name__ == '__main__':
-    north_cards = [Card(Suit.CLUBS,3),Card(Suit.HEARTS,3)]
-    south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
-    east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,4)]
-    west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
-    start = Deal(north_cards,east_cards,south_cards,west_cards,Player.WEST)
+    hands = {}
+    hands[Player.NORTH] = [Card(Suit.CLUBS ,3),Card(Suit.HEARTS,3)]
+    hands[Player.SOUTH] = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
+    hands[Player.EAST]  = [Card(Suit.CLUBS ,2),Card(Suit.SPADES,4)]
+    hands[Player.WEST]  = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
+    start = Deal(hands,Player.WEST)
     state = GameState.create_initial(start)
     for x in range(0,4):
         print state.get_next_player()

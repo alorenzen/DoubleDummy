@@ -51,11 +51,12 @@ def search(state):
     return low
 
 if __name__ == '__main__':
-    north_cards = [Card(Suit.CLUBS,3),Card(Suit.HEARTS,3)]
-    south_cards = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
-    east_cards = [Card(Suit.CLUBS,2),Card(Suit.SPADES,4)]
-    west_cards = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
-    start = Deal(north_cards,east_cards,south_cards,west_cards,Player.WEST)
+    hands = {}
+    hands[Player.NORTH] = [Card(Suit.CLUBS ,3),Card(Suit.HEARTS,3)]
+    hands[Player.SOUTH] = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
+    hands[Player.EAST]  = [Card(Suit.CLUBS ,2),Card(Suit.SPADES,4)]
+    hands[Player.WEST]  = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
+    start = Deal(hands,Player.WEST)
     state = GameState.create_initial(start)
     #state = GameState.create_initial(Randomhand(7).deal)
     print search(state)

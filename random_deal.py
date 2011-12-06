@@ -11,6 +11,11 @@ class Randomhand:
             deck.append(Card('S',i))
 
         sizeNHand = random.sample(deck, handSize*4)
-    
-        self.deal = Deal(sizeNHand[0:handSize],sizeNHand[handSize:handSize*2],sizeNHand[handSize*2:handSize*3],sizeNHand[handSize*3:handSize*4],Player.WEST)
+
+        hands = dict(zip(Player.POSITION,
+                         [sizeNHand[0         :handSize  ],
+                          sizeNHand[handSize  :handSize*2],
+                          sizeNHand[handSize*2:handSize*3],
+                          sizeNHand[handSize*3:handSize*4]]))
+        self.deal = Deal(hands,Player.WEST)
     

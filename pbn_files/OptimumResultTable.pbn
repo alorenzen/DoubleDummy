@@ -1,0 +1,3866 @@
+% PBN 2.0
+% 1
+% KGB's batch converter with
+% program version 1.90, build is 50
+% Converted 11/03/2007T8:35:58 AM
+{control  1}
+[Event "?"]
+[Site "?"]
+[Date "?"]
+[Board "1"]
+[West "?"]
+[North "?"]
+[East "?"]
+[South "?"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:4.KJ32.842.AQ743 JT987.Q876.AK5.2 AK532.T.JT6.T985 Q6.A954.Q973.KJ6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  9
+N  D  6
+N  H  5
+N  S  6
+N NT  6
+E  C  3
+E  D  7
+E  H  8
+E  S  7
+E NT  6
+S  C  9
+S  D  6
+S  H  5
+S  S  6
+S NT  6
+W  C  3
+W  D  7
+W  H  8
+W  S  7
+W NT  7
+
+{control  2}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "2"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:KQ9752.K74.8742. T.A93.QT93.KJ873 J6.T852.AJ65.QT9 A843.QJ6.K.A6542"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 800"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C 11
+N  D  6
+N  H  8
+N  S  5
+N NT  9
+E  C  2
+E  D  6
+E  H  5
+E  S  7
+E NT  4
+S  C 11
+S  D  6
+S  H  8
+S  S  5
+S NT  9
+W  C  2
+W  D  6
+W  H  5
+W  S  7
+W NT  4
+
+{control  3}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "3"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:876.T532.QJ.J853 AK53.9.T742.K974 QJ2.AK8.K853.Q62 T94.QJ764.A96.AT"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -110"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  6
+N  D  5
+N  H  5
+N  S  4
+N NT  6
+E  C  7
+E  D  8
+E  H  8
+E  S  8
+E NT  7
+S  C  6
+S  D  5
+S  H  5
+S  S  4
+S NT  6
+W  C  7
+W  D  8
+W  H  8
+W  S  8
+W NT  7
+
+{control  4}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "4"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:QT75.KQ64.KQ9.Q8 4.85.A8653.AKJT9 KJ863.A73.JT4.54 A92.JT92.72.7632"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 130"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C 10
+N  D  8
+N  H  5
+N  S  4
+N NT  7
+E  C  3
+E  D  4
+E  H  7
+E  S  8
+E NT  6
+S  C 10
+S  D  8
+S  H  5
+S  S  4
+S NT  7
+W  C  3
+W  D  4
+W  H  7
+W  S  8
+W NT  6
+
+{control  5}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "5"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:J7432.953.A95.96 K.AJT4.T73.AKJT3 T9865.K2.842.875 AQ.Q876.KQJ6.Q42"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -460"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  2
+N  D  2
+N  H  2
+N  S  6
+N NT  2
+E  C 11
+E  D 11
+E  H 11
+E  S  7
+E NT 11
+S  C  2
+S  D  2
+S  H  2
+S  S  6
+S NT  2
+W  C 11
+W  D 11
+W  H 11
+W  S  7
+W NT 11
+
+{control  6}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "6"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:AKQ32.K63.3.QJT8 T.QT8542.T9.K975 974.A7.AQ7642.64 J865.J9.KJ85.A32"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -620"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  5
+N  D  5
+N  H  6
+N  S  3
+N NT  5
+E  C  8
+E  D  8
+E  H  6
+E  S 10
+E NT  8
+S  C  5
+S  D  5
+S  H  6
+S  S  3
+S NT  5
+W  C  8
+W  D  8
+W  H  6
+W  S 10
+W NT  8
+
+{control  7}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "7"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:A94.742.T8762.J7 5.AQT.J54.AT9654 KQ763.J98653.K.Q JT82.K.AQ93.K832"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -1370"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  1
+N  D  3
+N  H  7
+N  S  6
+N NT  1
+E  C 12
+E  D 10
+E  H  5
+E  S  6
+E NT 10
+S  C  1
+S  D  3
+S  H  7
+S  S  6
+S NT  1
+W  C 12
+W  D 10
+W  H  5
+W  S  6
+W NT 10
+
+{control  8}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "8"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:K542.K3.A73.AQ32 8.QJ982.KJT54.98 J93.T76.Q62.J754 AQT76.A54.98.KT6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 140"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  5
+N  D  8
+N  H  9
+N  S  7
+N NT  7
+E  C  7
+E  D  5
+E  H  4
+E  S  5
+E NT  6
+S  C  5
+S  D  8
+S  H  9
+S  S  7
+S NT  7
+W  C  7
+W  D  5
+W  H  4
+W  S  5
+W NT  6
+
+{control  9}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "9"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:.74.AKQT763.K962 AT4.K9.J54.Q8743 KQJ983.AQJ85.9.T 7652.T632.82.AJ5"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 460"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  8
+N  D 11
+N  H 10
+N  S 11
+N NT 11
+E  C  5
+E  D  2
+E  H  2
+E  S  2
+E NT  2
+S  C  8
+S  D 11
+S  H 10
+S  S 11
+S NT 11
+W  C  5
+W  D  2
+W  H  2
+W  S  2
+W NT  2
+
+{control  10}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "10"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:T73.AK54.8.KQ974 QJ98..A754.A8532 K54.976.KQT932.T A62.QJT832.J6.J6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 110"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  8
+N  D  5
+N  H  7
+N  S  8
+N NT  7
+E  C  5
+E  D  6
+E  H  6
+E  S  5
+E NT  6
+S  C  7
+S  D  7
+S  H  7
+S  S  8
+S NT  7
+W  C  5
+W  D  5
+W  H  6
+W  S  5
+W NT  6
+
+{control  11}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "11"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:A95.A93.AQ982.96 KJ643.K7.64.AJ82 Q7.Q652.K75.T754 T82.JT84.JT3.KQ3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 110"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  6
+N  D  9
+N  H  8
+N  S  5
+N NT  8
+E  C  7
+E  D  4
+E  H  5
+E  S  8
+E NT  5
+S  C  6
+S  D  9
+S  H  8
+S  S  5
+S NT  8
+W  C  7
+W  D  4
+W  H  5
+W  S  8
+W NT  5
+
+{control  12}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "12"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:KT97.KJ743.6.865 J53.AT86.J984.J9 Q8.Q52.AKQ5.T743 A642.9.T732.AKQ2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 90"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  6
+N  D  7
+N  H  4
+N  S  7
+N NT  7
+E  C  6
+E  D  4
+E  H  7
+E  S  5
+E NT  6
+S  C  6
+S  D  7
+S  H  4
+S  S  7
+S NT  6
+W  C  6
+W  D  4
+W  H  7
+W  S  5
+W NT  6
+
+{control  13}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "13"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:953.KJT53.A8.QT5 QJ64.4.7642.8763 A872.Q8.J953.942 KT.A9762.KQT.AKJ"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -110"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  4
+N  D  4
+N  H  6
+N  S  5
+N NT  6
+E  C  8
+E  D  8
+E  H  6
+E  S  8
+E NT  7
+S  C  4
+S  D  4
+S  H  6
+S  S  5
+S NT  6
+W  C  9
+W  D  8
+W  H  7
+W  S  8
+W NT  7
+
+{control  14}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "14"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:KQ753.7542.Q973. T.98.T542.AQ9862 J842.KQJT.J.KJT3 A96.A63.AK86.754"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  9
+N  D  8
+N  H  5
+N  S  4
+N NT  6
+E  C  4
+E  D  5
+E  H  7
+E  S  9
+E NT  7
+S  C  9
+S  D  8
+S  H  5
+S  S  4
+S NT  6
+W  C  4
+W  D  5
+W  H  7
+W  S  9
+W NT  7
+
+{control  15}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "15"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:A63.K964.AJ97.A7 T84.QT5.KT6432.3 J95.A732..KQJ982 KQ72.J8.Q85.T654"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 650"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C 11
+N  D  6
+N  H 11
+N  S  9
+N NT 10
+E  C  2
+E  D  7
+E  H  1
+E  S  4
+E NT  2
+S  C 11
+S  D  6
+S  H 11
+S  S  9
+S NT 10
+W  C  2
+W  D  7
+W  H  1
+W  S  4
+W NT  2
+
+{control  16}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "16"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:75.T9642.KJ654.5 K84.KQ8.A9.Q6432 AJ962.75..AKJT98 QT3.AJ3.QT8732.7"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  6
+N  D  8
+N  H  7
+N  S  5
+N NT  7
+E  C  7
+E  D  5
+E  H  6
+E  S  8
+E NT  6
+S  C  6
+S  D  8
+S  H  6
+S  S  5
+S NT  7
+W  C  7
+W  D  5
+W  H  6
+W  S  8
+W NT  6
+
+{control  17}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "17"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:KJ874.T76.A4.K72 .K54.Q752.AJT864 AQ63.983.986.Q95 T952.AQJ2.KJT3.3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -450"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  3
+N  D  1
+N  H  2
+N  S  6
+N NT  6
+E  C  9
+E  D 11
+E  H 11
+E  S  6
+E NT  6
+S  C  3
+S  D  1
+S  H  2
+S  S  6
+S NT  6
+W  C  9
+W  D 11
+W  H 11
+W  S  6
+W NT  6
+
+{control  18}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "18"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:AQJ98.954.J76.A9 .AK632.AK853.J43 KT6542.87.92.QT2 73.QJT.QT4.K8765"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 500"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C 10
+N  D 11
+N  H 11
+N  S  5
+N NT  6
+E  C  2
+E  D  2
+E  H  2
+E  S  8
+E NT  3
+S  C 10
+S  D 11
+S  H 11
+S  S  5
+S NT  6
+W  C  2
+W  D  2
+W  H  2
+W  S  8
+W NT  3
+
+{control  19}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "19"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:K6.876.862.KT742 J984.AJ9543.4.95 52.K2.AKQT7.QJ86 AQT73.QT.J953.A3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  9
+N  D  9
+N  H  4
+N  S  4
+N NT  6
+E  C  3
+E  D  4
+E  H  9
+E  S  9
+E NT  5
+S  C  9
+S  D  9
+S  H  4
+S  S  4
+S NT  6
+W  C  3
+W  D  4
+W  H  9
+W  S  9
+W NT  5
+
+{control  20}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "20"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:94.AJ7.Q872.KT43 83.42.AT643.QJ72 AQ75.KQ986.KJ.86 KJT62.T53.95.A95"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -600"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  5
+N  D  6
+N  H  4
+N  S  6
+N NT  4
+E  C  7
+E  D  7
+E  H  9
+E  S  7
+E NT  9
+S  C  5
+S  D  6
+S  H  4
+S  S  6
+S NT  4
+W  C  7
+W  D  7
+W  H  9
+W  S  7
+W NT  9
+
+{control  21}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "21"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:.AJT75.Q743.AKQ4 Q72.432.2.JT8532 AT64.KQ8.KJT9.97 KJ9853.96.A865.6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 1100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  8
+N  D 12
+N  H 11
+N  S  6
+N NT  9
+E  C  5
+E  D  1
+E  H  1
+E  S  7
+E NT  1
+S  C  8
+S  D 12
+S  H 11
+S  S  6
+S NT 10
+W  C  5
+W  D  1
+W  H  1
+W  S  7
+W NT  1
+
+{control  22}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "22"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:763.JT87.64.QT86 KQJT4.K3.K2.J753 A5.AQ542.AT8.A94 982.96.QJ9753.K2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -300"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  4
+N  D  8
+N  H  3
+N  S  8
+N NT  3
+E  C  8
+E  D  5
+E  H 10
+E  S  5
+E NT  7
+S  C  4
+S  D  8
+S  H  3
+S  S  8
+S NT  4
+W  C  8
+W  D  5
+W  H 10
+W  S  5
+W NT  7
+
+{control  23}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "23"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:AQJ5.632.63.KT85 7.KQJ7.QT9.QJ942 KT4.A98.KJ82.A76 98632.T54.A754.3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 120"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  7
+N  D  7
+N  H  7
+N  S  8
+N NT  8
+E  C  5
+E  D  5
+E  H  5
+E  S  4
+E NT  4
+S  C  7
+S  D  7
+S  H  7
+S  S  8
+S NT  8
+W  C  6
+W  D  5
+W  H  5
+W  S  4
+W NT  4
+
+{control  24}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "24"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:KJT5.Q9.QJ64.632 Q82.AJ7532.T7.Q9 7.K86.A953.AJT75 A9643.T4.K82.K84"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -110"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  5
+N  D  4
+N  H  8
+N  S  7
+N NT  5
+E  C  8
+E  D  9
+E  H  5
+E  S  6
+E NT  8
+S  C  4
+S  D  4
+S  H  8
+S  S  7
+S NT  5
+W  C  8
+W  D  9
+W  H  5
+W  S  6
+W NT  8
+
+{control  25}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "25"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:.KQT82.K542.AT64 T986432.3.A93.98 Q.AJ96.Q76.KQJ32 AKJ75.754.JT8.75"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 800"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C 12
+N  D  9
+N  H 11
+N  S  4
+N NT  5
+E  C  1
+E  D  2
+E  H  2
+E  S  9
+E NT  3
+S  C 12
+S  D  9
+S  H 11
+S  S  4
+S NT  5
+W  C  1
+W  D  2
+W  H  2
+W  S  9
+W NT  3
+
+{control  26}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "26"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:QT87.A9753.986.4 96.KT42.J732.875 AK3.Q6.AQT5.AKJ9 J542.J8.K4.QT632"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  4
+N  D  2
+N  H  3
+N  S  2
+N NT  2
+E  C  9
+E  D 11
+E  H 10
+E  S 10
+E NT 10
+S  C  4
+S  D  2
+S  H  3
+S  S  3
+S NT  3
+W  C  8
+W  D 11
+W  H 10
+W  S 10
+W NT 10
+
+{control  27}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "27"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:J7.A83.AK53.QJT5 AQT9542.Q5.QT.86 8.KT9742.J972.94 K63.J6.864.AK732"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 100"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  7
+N  D  9
+N  H 10
+N  S  3
+N NT  4
+E  C  6
+E  D  2
+E  H  3
+E  S  9
+E NT  3
+S  C  7
+S  D  9
+S  H 10
+S  S  3
+S NT  4
+W  C  6
+W  D  2
+W  H  3
+W  S  9
+W NT  3
+
+{control  28}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "28"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:QJ5.AQ863.AJ92.Q AK92.JT92.7.KT98 73..KQT653.65432 T864.K754.84.AJ7"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -130"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  7
+N  D  3
+N  H  8
+N  S  9
+N NT  6
+E  C  6
+E  D 10
+E  H  5
+E  S  3
+E NT  5
+S  C  7
+S  D  2
+S  H  8
+S  S  8
+S NT  6
+W  C  6
+W  D 10
+W  H  5
+W  S  4
+W NT  5
+
+{control  29}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "29"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:AJ32.K7.KQJ9.J86 97.AQ9.T63.AQT72 KQ654.T83.A72.K9 T8.J6542.854.543"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  7
+N  D 11
+N  H  7
+N  S 10
+N NT 10
+E  C  6
+E  D  2
+E  H  6
+E  S  3
+E NT  3
+S  C  6
+S  D 10
+S  H  6
+S  S 10
+S NT  7
+W  C  6
+W  D  2
+W  H  6
+W  S  3
+W NT  3
+
+{control  30}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "30"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:JT.K6532.74.JT85 AK92.A874.982.72 853.QJT.AKQ6.K64 Q764.9.JT53.AQ93"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 420"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  7
+N  D  8
+N  H  5
+N  S 10
+N NT  7
+E  C  6
+E  D  4
+E  H  7
+E  S  3
+E NT  5
+S  C  7
+S  D  8
+S  H  5
+S  S 10
+S NT  7
+W  C  6
+W  D  4
+W  H  7
+W  S  3
+W NT  5
+
+{control  31}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "31"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:AQ97.653.T9.AJ75 T54.J9.J742.QT98 K.KQ42.AQ865.K64 J8632.AT87.K3.32"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS 600"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  9
+N  D 10
+N  H  9
+N  S  8
+N NT  9
+E  C  4
+E  D  3
+E  H  4
+E  S  5
+E NT  3
+S  C  9
+S  D 10
+S  H  9
+S  S  8
+S NT  9
+W  C  4
+W  D  3
+W  H  4
+W  S  5
+W NT  3
+
+{control  32}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "32"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:JT94.A53.AJ3.K43 32.JT72.KQ842.96 AKQ76.K84.96.AJ7 85.Q96.T75.QT852"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  5
+N  D  6
+N  H  5
+N  S  3
+N NT  3
+E  C  8
+E  D  7
+E  H  8
+E  S 10
+E NT 10
+S  C  5
+S  D  6
+S  H  5
+S  S  3
+S NT  3
+W  C  8
+W  D  7
+W  H  8
+W  S 10
+W NT 10
+
+{control  33}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "33"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:532.T95.QT52.864 JT9864.AQ82.A.Q9 Q.643.8764.AKT73 AK7.KJ7.KJ93.J52"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  34}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "34"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:QT64.QT9.KJ.AKQ5 KJ83.J4.93.JT743 A72.7653.QT752.9 95.AK82.A864.862"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  35}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "35"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:T3.T74.JT96.K832 J5.J9652.KQ5.964 A87642.Q8.843.A7 KQ9.AK3.A72.QJT5"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  36}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "36"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:A3.J7.KQ973.KJ97 QJ8.KT83.JT86.54 9764.A52.54.AQT8 KT52.Q964.A2.632"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  37}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "37"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:K5.J86.AKQ82.KT9 AQJT8.AQ5.T.A762 7643.KT74.J75.J5 92.932.9643.Q843"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  38}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "38"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:Q8.QT2.QT98.J732 J4.A9854.KJ6.T98 T9.K76.753.AK654 AK76532.J3.A42.Q"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  39}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "39"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:Q65.KT65.AT.AK73 AJ73.4.KJ3.QJ982 KT984.873.97654. 2.AQJ92.Q82.T654"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  40}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "40"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:QJT8.AJ7.T875.Q6 975.8432.AQJ962. K32.KQ95.K4.JT32 A64.T6.3.AK98754"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  41}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "41"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:J3.AQ872.J987.A8 AQT.T4.AKQ2.KQT9 K94.KJ65.T63.763 87652.93.54.J542"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  42}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "42"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:AQ982.AJT.KT.732 K643.Q7632.A3.J4 J7.K.QJ98764.AK8 T5.9854.52.QT965"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  43}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "43"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:QJ85.Q643.Q8742. 7642.A.JT5.JT974 AK9.KJ87.AK96.KQ T3.T952.3.A86532"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  44}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "44"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:J432.T3.AT854.76 QT6.AKQ862.7.KJ9 9.J7.KQ932.QT532 AK875.954.J6.A84"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  45}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "45"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:A765.K8.T8542.63 QJ3.QT43.K6.AK97 K842.65.Q973.J85 T9.AJ972.AJ.QT42"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  46}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "46"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:Q74.KJ63.J8.J875 A98652.QT9.KT3.9 K3.8542.9764.K64 JT.A7.AQ52.AQT32"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  47}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "47"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:Q6.KJ765.J5.T732 JT54.T98.732.K95 AK73.A42.KQ9.J86 982.Q3.AT864.AQ4"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  48}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "48"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:JT8.T763.5.AKQ87 KQ543.98.J2.T432 72.Q5.AK8763.965 A96.AKJ42.QT94.J"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  49}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "49"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:AK4.AKQT853..K93 976.974.QJ973.52 T2.62.AT865.AQ76 QJ853.J.K42.JT84"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  50}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "50"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:AJ4.AQJ94.KQ.AJ8 QT.T753.T763.T73 K965.2.A954.Q942 8732.K86.J82.K65"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  51}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "51"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:T6532.QT73.J93.4 KQ8.J64.AQ74.A97 7.K9852.K865.QJ6 AJ94.A.T2.KT8532"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  52}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "52"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:KJ953.Q9832.9.83 A8.K.QT842.AT652 Q74.A74.AKJ6.QJ9 T62.JT65.753.K74"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  53}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "53"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:K8764.832.A54.J8 A9.K64.KQ62.KQT9 QJ2.Q7.JT873.732 T53.AJT95.9.A654"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  54}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "54"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:A62.J.AJ432.7543 9.AT6543.KQT86.9 JT84.KQ7.7.AK862 KQ753.982.95.QJT"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  55}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "55"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:QJ62.K.KJT973.J6 9.Q652.Q8654.K95 T43.AT873.A2.742 AK875.J94..AQT83"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  56}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "56"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:KT6.9.QJ62.AKQT5 A2.KQT532.T83.98 Q9543.J74.A7.732 J87.A86.K954.J64"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  57}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "57"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:T3.KQ74.J754.Q82 AQ5.A9832.AK.AT7 K642.T6.T86.9543 J987.J5.Q932.KJ6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  58}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "58"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:AJ832.T.AT875.Q4 974.A94.9642.J83 KQT65.J7.Q.K9752 .KQ86532.KJ3.AT6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  59}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "59"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:K6543.642.A83.86 AT9.AKQ.J542.AKJ 2.J875.Q96.T7543 QJ87.T93.KT7.Q92"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  60}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "60"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:532.A7.AQ.KQ9764 A7.T632.7652.J32 KJT84.Q85.KJ.AT5 Q96.KJ94.T9843.8"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  61}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "61"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:K874.T8.JT87.A53 52.QJ743.KQ2.JT6 QJT.AK92.A53.KQ4 A963.65.964.9872"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  62}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "62"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:Q962.4.K85.A9863 AK853.32.T43.QJ7 4.AT986.AQ9.KT54 JT7.KQJ75.J762.2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  63}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "63"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:QT43.65.T984.742 AK7.A72.J63.AKQJ J8652.J84.Q7.953 9.KQT93.AK52.T86"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  64}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "64"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:K43.K9853.2.9854 965.QT42.QJ74.KJ AQJ2.7.T9865.T32 T87.AJ6.AK3.AQ76"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  65}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "65"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:Q86.J83.K2.KT863 A42.KQT2.A843.Q2 JT53.A.QJT965.J4 K97.97654.7.A975"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  66}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "66"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:A7.T973.AJ4.Q942 Q9864.K8.T2.AK86 KJ.QJ64.KQ7653.T T532.A52.98.J753"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  67}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "67"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:J72.87.Q854.KQT3 KQ4.KJT.AK9.9872 6.AQ9653.732.J54 AT9853.42.JT6.A6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  68}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "68"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:AT763.AQ6.K86.J5 94.4.A74.AT98764 J82.JT832.J532.3 KQ5.K975.QT9.KQ2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  69}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "69"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:J73.86.K42.T8643 K842.KT72.J97.A2 QT9.AJ943.A85.97 A65.Q5.QT63.KQJ5"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  70}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "70"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:A64.AT2.AJ6532.5 T753.J43.QT.KT63 KQ98.85.98.QJ942 J2.KQ976.K74.A87"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  71}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "71"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:K985.A4.AK98.A84 T4.KT865.7632.J3 AJ63.7.T4.KT9762 Q72.QJ932.QJ5.Q5"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  72}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "72"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:Q54.AQ53.A7.KT94 63.92.K864.QJ875 AKJ987.J8.QJ932. T2.KT764.T5.A632"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  73}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "73"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:AT2.KQ7653.7.JT9 93.84.J862.KQ842 K5.AJT92.AT53.53 QJ8764..KQ94.A76"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  74}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "74"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:T987.KT73.KT4.QJ AK.AQ4.9763.KT73 J632.62.AQ5.8652 Q54.J985.J82.A94"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  75}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "75"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:JT7.K63.AT943.A2 A8.42.Q85.KT9874 KQ962.AT987.76.Q 543.QJ5.KJ2.J653"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  76}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "76"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:QJ5.K32.AQT2.763 K76432.AT86..A82 AT9.94.954.KQJT5 8.QJ75.KJ8763.94"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  77}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "77"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:J3.AJ87.Q7532.74 KQ865.96.KJ6.AKT T72.32.AT4.J8632 A94.KQT54.98.Q95"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  78}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "78"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:6.AQ875.63.AKQJ7 K7542.T2.QJT.985 A93.J643.A97.642 QJT8.K9.K8542.T3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  79}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "79"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:.KQ764.842.KT953 AKQJ.T9.T963.Q86 T964.AJ83.Q5.AJ4 87532.52.AKJ7.72"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  80}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "80"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:KJ9853.J.AJ54.94 Q7.K64.K3.AKJT63 6.T8753.QT986.Q8 AT42.AQ92.72.752"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  81}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "81"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:KQ9865.T76.74.93 3.98.KQJ853.Q752 A42.AJ54.A6.JT84 JT7.KQ32.T92.AK6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  82}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "82"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:T852.AT8.6.KQ652 97.KJ64.T952.J84 AK.72.AQ743.T973 QJ643.Q953.KJ8.A"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  83}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "83"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:A98.T95.K832.AJ3 T7.KQJ872.T.QT62 KQJ642.64.974.K7 53.A3.AQJ65.9854"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  84}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "84"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "All"]
+[Deal "W:AQ984.A63.8.QJ76 KJT732.J.T432.K9 .KQT9854.AQ6.T32 65.72.KJ975.A854"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  85}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "85"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "NS"]
+[Deal "N:963.AKT62.86.A93 .853.QJT754.QT54 QJ874.94.AK2.762 AKT52.QJ7.93.KJ8"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  86}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "86"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "EW"]
+[Deal "E:AT3.2.98762.AKJT QJ.KQT963.53.984 K97542.5.KQJT4.3 86.AJ874.A.Q7652"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  87}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "87"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "All"]
+[Deal "S:J43..AJT8753.642 AQ862.A54.K.AKJT 975.KQJ863.92.85 KT.T972.Q64.Q973"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  88}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "88"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "-"]
+[Deal "W:QT52.QJT872.T3.8 AK96.63.AJ8.Q652 J43.AK9.K96.AT43 87.54.Q7542.KJ97"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  89}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "89"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "EW"]
+[Deal "N:Q8.KJ9874.JT83.T JT62.5.Q5.987643 953.QT6.AK96.KQ5 AK74.A32.742.AJ2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  90}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "90"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "All"]
+[Deal "E:2.83.AKJ7.KT9642 T93.QJ42.653.J53 AQJ654.97.QT2.Q8 K87.AKT65.984.A7"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  91}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "91"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "-"]
+[Deal "S:AK6.QJ43.9.AQT64 Q543.A76.A7.K875 T9.T852.T653.932 J872.K9.KQJ842.J"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  92}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "92"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "NS"]
+[Deal "W:T2.T8.KQ863.QJ85 74.KJ9765.7.T743 KJ983..AT92.AK62 AQ65.AQ432.J54.9"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  93}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "93"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "All"]
+[Deal "N:K943.Q965.A5.T72 QT75.KJ8742.43.6 AJ82.A.T76.KQJ85 6.T3.KQJ982.A943"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  94}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "94"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "-"]
+[Deal "E:J32.J6.AJ98732.Q Q975.AK2..A98542 AK86.QT3.KT6.K76 T4.98754.Q54.JT3"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  95}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "95"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "NS"]
+[Deal "S:AK9652.965.52.85 J4.873.96.K97643 Q83.AJT.T743.AQT T7.KQ42.AKQJ8.J2"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  96}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "96"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "W"]
+[Vulnerable "EW"]
+[Deal "W:K752.KQ9532.AT.6 QJ943.J4.J6.AKJ5 A6.7.Q543.QT8742 T8.AT86.K9872.93"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  97}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "97"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "N"]
+[Vulnerable "-"]
+[Deal "N:Q97.A94.AQ73.K82 JT5.T862.J84.A74 K6432.K.T92.JT93 A8.QJ753.K65.Q65"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  98}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "98"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[Deal "E:AQ97632.82.K2.J5 J.JT965.QJT63.A4 T854.K73.A.T8763 K.AQ4.98754.KQ92"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
+{control  99}
+[Event "#"]
+[Site "#"]
+[Date "#"]
+[Board "99"]
+[West "#"]
+[North "#"]
+[East "#"]
+[South "#"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:T.T97.AQ862.KT32 Q854.3.J975.A874 KJ963.A6542..J95 A72.KQJ8.KT43.Q6"]
+[Scoring "?"]
+[Declarer "?"]
+[Contract "?"]
+[Result "?"]
+[OptimumScore "NS -630"]
+[OptimumResultTable "Declarer;Denomination\2R;Result\2R"]
+N  C  ?
+N  D  ?
+N  H  ?
+N  S  ?
+N NT  ?
+E  C  ?
+E  D  ?
+E  H  ?
+E  S  ?
+E NT  ?
+S  C  ?
+S  D  ?
+S  H  ?
+S  S  ?
+S NT  ?
+W  C  ?
+W  D  ?
+W  H  ?
+W  S  ?
+W NT  ?
+
