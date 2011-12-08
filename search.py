@@ -1,3 +1,5 @@
+
+import sys
 from game_state import *
 from random_deal import Randomhand
 
@@ -7,7 +9,6 @@ def ddsearch(game_state, goal):
     or not it is possible for north/south to 
     take goal number of tricks
     """
-    #print goal
     if game_state.tricks_left() == 0:
         return game_state.team_win_last_trick(Player.TEAM[game_state.get_next_player()])
     if goal <= 0:
@@ -17,9 +18,7 @@ def ddsearch(game_state, goal):
     
     player = game_state.get_next_player()
     actions = game_state.get_actions_for_player(player)
-    #print player
     for action in actions:
-        #print action
         next_state = game_state.play_card(action)
         if game_state.state_switch_teams(next_state):
             next_goal = game_state.tricks_left() - goal + 1
@@ -32,7 +31,6 @@ def ddsearch(game_state, goal):
             else:
                 next_goal = goal
             result = ddsearch(next_state,next_goal)
-        #print result
         if result:
             return True
 
@@ -51,14 +49,20 @@ def search(state):
     return low
 
 if __name__ == '__main__':
-    hands = {}
-    hands[Player.NORTH] = [Card(Suit.CLUBS ,3),Card(Suit.HEARTS,3)]
-    hands[Player.SOUTH] = [Card(Suit.HEARTS,2),Card(Suit.HEARTS,4)]
-    hands[Player.EAST]  = [Card(Suit.CLUBS ,2),Card(Suit.SPADES,4)]
-    hands[Player.WEST]  = [Card(Suit.SPADES,3),Card(Suit.SPADES,5)]
-    start = Deal(hands,Player.WEST)
-    state = GameState.create_initial(start)
-    #state = GameState.create_initial(Randomhand(7).deal)
-    print search(state)
+    C = Suit.CLUBS
+    D = Suit.DIAMONDS
+    H = Suit.HEARTS
+    S = Suit.SPADES
 
-        
+    hands = {}
+    hands[Player.NORTH] = [Card(S,14),Card(S,13),Card(S,12),Card(H,9 ),Card(D,8),Card(C,2)]
+    hands[Player.EAST]  = [Card(S,9 ),Card(S,6 ),Card(S,5 ),Card(H,6 ),Card(D,9),Card(C,5)]
+    hands[Player.SOUTH] = [Card(S,3 ),Card(H,7 ),Card(H,3 ),Card(D,11),Card(D,2),Card(C,3)]
+    hands[Player.WEST]  = [Card(S,11),Card(S,10),Card(S,8 ),Card(H,5 ),Card(H,4),Card(H,2)]
+    start = Deal(hands,Player.NORTH)
+    if(len(sys.argv) > 1):
+        state = GameState.create_initial(Randomhand(int(sys.argv[1])).deal)
+    else:
+        state = GameState.create_initial(start)
+    print state.hands
+    print search(state)

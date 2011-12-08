@@ -26,14 +26,16 @@ def importPBN(pbn):
             for rank in suitcards:
                 card = Card(suit,CARDRANK[rank])
                 hands[player].append(card)
-    if 'Play' in tags:
-        first = POSITION[tags['Play']]
-    else:
-        first = Player.WEST
-    deal = Deal(hands,first)
-    if not deal.isValidDeal():
-        raise ParseError, "Deal does not validate"
-    return GameState.create_initial(deal)
+    
+    results = filter(lambda x: x[1] == 'NT',map(lambda x: x.strip().split(),sections['Optimumresulttable'].split('\n'))[1:20])
+    expected = {}
+    for player, suit, tricks in results:
+        player = POSITION[player]
+        deal = Deal(hands,player)
+        if not deal.isValidDeal():
+            raise ParseError, "Deal does not validate"
+        expected[player] = (deal,tricks)
+    return expected
 
 def parsePBN(pbn):
     """Parses the given PBN string and extracts:
