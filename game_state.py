@@ -31,13 +31,12 @@ class Suit:
     DIAMONDS = 'D'
     HEARTS   = 'H'
     SPADES   = 'S'
-    NONE     = 'N'
 
 class Player:
-    NORTH = 'North'
-    SOUTH = 'South'
-    EAST  = 'East'
-    WEST  = 'West'
+    NORTH = 'N'
+    SOUTH = 'S'
+    EAST  = 'E'
+    WEST  = 'W'
 
     POSITION = [NORTH,EAST,SOUTH,WEST]
 
@@ -62,15 +61,20 @@ class Trick:
             self.suit = prevTrick.suit
         else:
             self.cards = {}
-            self.suit = Suit.NONE
+            self.suit = None
 
     def __repr__(self):
         return str(self.cards)
 
+    def __eq__(self,other):
+        if not isinstance(other,Trick):
+            return False
+        return self.suit == other.suit and self.cards == other.cards
+
 #if you play a certain card, set your suit to be that card's suit
     def play_card(self,card,player):
         self.cards[card] = player
-        if self.suit == Suit.NONE:
+        if self.suit == None:
             self.suit = card.suit
 
     def is_new_trick(self):
@@ -92,12 +96,10 @@ class GameState:
             self.hands = prevState.hands.copy()
             self.next_player = prevState.next_player
             self.current_trick = Trick(prevState.current_trick)
-            self.tricks = prevState.tricks
         else:
             self.hands = {}
             self.next_player = Player.WEST
             self.current_trick = Trick()
-            self.tricks = []
 
     @classmethod
     def create_initial(cls,starting_deal):
@@ -105,6 +107,15 @@ class GameState:
         g.hands = starting_deal.hands
         g.next_player = starting_deal.starting_player
         return g
+
+    def __hash__(self):
+        return self.__repr__().__hash__()
+
+    def __eq__(self,other):
+        return (self.hands == other.hands) and (self.next_player == other.next_player) and (self.current_trick == other.current_trick)
+
+    def __repr__(self):
+        return repr(self.hands) + repr(self.current_trick) + self.next_player
 
     def is_new_trick(self):
         return self.current_trick.is_new_trick()
@@ -119,7 +130,7 @@ class GameState:
         return self.get_playable_cards(self.hands[player],self.current_trick)
     
     def get_playable_cards(self,hand,trick):
-        if trick.suit == Suit.NONE:
+        if trick.suit == None:
             return hand
         else:
             followSuit = [x for x in hand if x.suit == trick.suit]
@@ -136,21 +147,24 @@ class GameState:
         nextState.hands[self.next_player] = [x for x in current_hand if x != card]
         nextState.current_trick.play_card(card,self.next_player)
         if nextState.current_trick.finished():
-            nextState.tricks.append(nextState.current_trick)
             nextState.next_player = nextState.current_trick.winner()
             nextState.current_trick = Trick()
         else:
             nextState.next_player = Player.NEXT[self.next_player]
         return nextState
 
-    def get_NS_trick_count(self):
-        return len([x for x in self.tricks if x in Player.NS])
-
     def tricks_left(self):
         return max(map(lambda x: len(x),self.hands.values()))
     
+    # assume this is only called on last trick, 
+    # so each player should have one card left
     def team_win_last_trick(self,team):
-        return self.tricks[len(self.tricks)-1].winner() in team
+        trick = Trick()
+        trick.play_card(self.hands[self.next_player][0],self.next_player)
+        for player in [x for x in Player.POSITION if x != self.next_player]:
+            for card in self.get_actions_for_player(player):
+                trick.play_card(card,player)
+        return trick.winner() in team
 
     def state_switch_teams(self,other_state):
         return self.switch_teams(self.next_player,other_state.next_player)

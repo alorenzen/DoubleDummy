@@ -1,22 +1,29 @@
-
+import os
 import sys
 from game_state import *
 from random_deal import Randomhand
+from transposition_tables import TranspositionTable
 
-def ddsearch(game_state, goal):
+def ddsearch(game_state,goal,transTable):
     """
     given a game_state, determine whether
-    or not it is possible for north/south to 
-    take goal number of tricks
+    or not it is possible for current_player's 
+    team to take goal number of tricks
     """
-    if game_state.tricks_left() == 0:
-        return game_state.team_win_last_trick(Player.TEAM[game_state.get_next_player()])
+    player = game_state.get_next_player()
+    if transTable.checkCache(game_state) >= goal:
+        return True
+    if game_state.tricks_left() == 1:
+        if game_state.team_win_last_trick(Player.TEAM[player]):
+            transTable.saveToCache(game_state,1)
+            return True
+        else:
+            return False
     if goal <= 0:
         return True
     if goal > game_state.tricks_left():
         return False
     
-    player = game_state.get_next_player()
     actions = game_state.get_actions_for_player(player)
     for action in actions:
         next_state = game_state.play_card(action)
@@ -24,31 +31,33 @@ def ddsearch(game_state, goal):
             next_goal = game_state.tricks_left() - goal + 1
             if next_state.is_new_trick():
                 next_goal = next_goal - 1
-            result = not ddsearch(next_state,next_goal)
+            result = not ddsearch(next_state,next_goal,transTable)
         else: 
             if next_state.is_new_trick():
                 next_goal = goal - 1
             else:
                 next_goal = goal
-            result = ddsearch(next_state,next_goal)
+            result = ddsearch(next_state,next_goal,transTable)
         if result:
+            transTable.saveToCache(game_state,goal)
             return True
-
     return False
 
-def search(state):
+def search(state,transTable):
     low=0
     high=state.tricks_left()+1
     while low+1<high:
         goal = (low+high)/2
         print goal
-        if ddsearch(state,goal):
+        if ddsearch(state,goal,transTable):
             low = goal
         else:
             high = goal
     return low
 
 if __name__ == '__main__':
+    transpo_file = 'transposition_table.dat'
+    transTable = TranspositionTable(transpo_file)
     C = Suit.CLUBS
     D = Suit.DIAMONDS
     H = Suit.HEARTS
@@ -65,4 +74,5 @@ if __name__ == '__main__':
     else:
         state = GameState.create_initial(start)
     print state.hands
-    print search(state)
+    print search(state,transTable)
+    transTable.close()
