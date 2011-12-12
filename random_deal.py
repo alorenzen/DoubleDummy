@@ -13,9 +13,9 @@ class Randomhand:
         sizeNHand = random.sample(deck, handSize*4)
 
         hands = dict(zip(Player.POSITION,
-                         [sizeNHand[0         :handSize  ],
-                          sizeNHand[handSize  :handSize*2],
-                          sizeNHand[handSize*2:handSize*3],
-                          sizeNHand[handSize*3:handSize*4]]))
+                         [sorted(sizeNHand[0         :handSize  ],reverse=True),
+                          sorted(sizeNHand[handSize  :handSize*2],reverse=True),
+                          sorted(sizeNHand[handSize*2:handSize*3],reverse=True),
+                          sorted(sizeNHand[handSize*3:handSize*4],reverse=True)]))
         self.deal = Deal(hands,Player.WEST)
     

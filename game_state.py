@@ -31,6 +31,7 @@ class Suit:
     DIAMONDS = 'D'
     HEARTS   = 'H'
     SPADES   = 'S'
+    SUITS = [CLUBS,DIAMONDS,HEARTS,SPADES]
 
 class Player:
     NORTH = 'N'
