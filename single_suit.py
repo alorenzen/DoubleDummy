@@ -1,5 +1,6 @@
 from game_state import *
 from random_deal import *
+from relative_rank import *
 
 def sure_tricks(game_state):
     """
@@ -29,19 +30,18 @@ def sure_tricks(game_state):
 
     return reduce(lambda x,y: x+reduce_suit(y), Suit.SUITS, 0)
 
-def sure_tricks_coop(game_state):
+def sure_tricks_coop(hands,player):
     """
     this assumes that it is being called on the first player in a hand
     it also does not take into account a cooperative partner
     """
-    player = game_state.get_next_player()
     #my hand
-    players_hand = game_state.get_actions_for_player(player)
+    players_hand = hands[player]
     #my partner's hand
-    partners_hand = game_state.get_actions_for_player(Player.NEXT[Player.NEXT[player]])
+    partners_hand = hands[Player.NEXT[Player.NEXT[player]]]
     #my opponent's hands
     others = [x for x in Player.POSITION if x != player and x !=Player.NEXT[Player.NEXT[player]]]
-    other_hands = [game_state.get_actions_for_player(x) for x in others]
+    other_hands = [hands[x] for x in others]
 
 
     def reduce_suit(suit):
@@ -74,9 +74,11 @@ def sure_tricks_coop(game_state):
     return reduce(lambda x,y: x+reduce_suit(y), Suit.SUITS, 0)
 
 
-        
 if __name__ == '__main__':
     hand = Randomhand().deal
     state = GameState.create_initial(hand)
+    rank = RelativeRank()
     print state
-    print sure_tricks(state)
+    print rank.relative_hands(state)
+    print sure_tricks_coop(state.hands,state.next_player)
+    print sure_tricks_coop(rank.relative_hands(state),state.next_player)

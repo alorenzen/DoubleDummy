@@ -25,7 +25,6 @@ class Card(namedtuple('Card','suit value')):
     def __repr__(self):
         return self.__str__()
 
-
 class Suit:
     CLUBS    = 'C'
     DIAMONDS = 'D'
@@ -172,6 +171,14 @@ class GameState:
 
     def switch_teams(self,old_player,new_player):
         return (old_player in Player.NS and new_player not in Player.NS) or (old_player not in Player.NS and new_player in Player.NS)
+
+    def get_state_of_suit(self, suit):
+        state = 0
+        for player,hand in self.hands.iteritems():
+            for card in hand:
+                if card.suit == suit:
+                    state = state + (1 << (card.value - 2))
+        return state
 
 
 class Deal:
