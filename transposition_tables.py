@@ -23,8 +23,8 @@ class TranspositionTable:
   shelve requires that all keys be strings,
   so we simply use repr(game_state)
   """
-  def __init__(self,config):
-    self.persistent = config.getboolean('Test','save_transposition_table')
+  def __init__(self,config,saveTable):
+    self.persistent = saveTable
     if self.persistent:
       self.table = gdbm.open(config.get('Search', 'transposition_table'),'cf')
     else:
@@ -45,12 +45,16 @@ class TranspositionTable:
       except KeyError:
           self.table[repr(game_state)] = str(newTricks)
 
+  def clear(self):
+    if not self.persistent:
+      self.table.clear()
+
   def close(self):
     if self.persistent:
       self.table.close()
 
 if __name__ == '__main__':
-  shelve = shelve.open('/home/scratch/tal1/double_dummy/data/transposition_table.dat')
+  shelve = shelve.open('/home/scratch/tal1/double_dummy/data/transposition_table.dat2')
   config = Configuration('search_config.cfg')
   table = config.transTable
   for key,value in shelve.iteritems():

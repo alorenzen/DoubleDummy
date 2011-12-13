@@ -5,21 +5,31 @@ from single_suit import *
 from transposition_tables import *
 
 class Configuration:
-    def __init__(self,config_file):
+    def __init__(self,config_file,test_params={}):
         self.config = ConfigParser.RawConfigParser()
         self.config.read(config_file)
-        self.useTable = self.config.getboolean('Test','transposition_table')
-        self.saveTable = self.config.getboolean('Test','save_transposition_table')
-        self.useSingleSuit = self.config.getboolean('Test','single_suit')
-        self.sortActions = self.config.getboolean('Test','sort_actions')
-        self.transTable = TranspositionTable(self.config)
-        self.rank = RelativeRank(self.config)
-        self.singleSuit = SingleSuit(self.config,self.rank)
+        if test_params:
+            self.useTable = test_params["useTable"]
+            self.saveTable = test_params["saveTable"]
+            self.useSingleSuit = test_params["useSingleSuit"]
+            self.sortActions = test_params["sortActions"]
+        else:
+            self.useTable = self.config.getboolean('Test','transposition_table')
+            self.saveTable = self.config.getboolean('Test','save_transposition_table')
+            self.useSingleSuit = self.config.getboolean('Test','single_suit')
+            self.sortActions = self.config.getboolean('Test','sort_actions')
+        if self.useTable:
+            self.transTable = TranspositionTable(self.config,self.saveTable)
+        if self.useSingleSuit:
+            self.rank = RelativeRank(self.config)
+            self.singleSuit = SingleSuit(self.config,self.rank)
 
     def close(self):
-        self.transTable.close()
-        self.rank.close()
-        self.singleSuit.close()
+        if self.useTable:
+            self.transTable.close()
+        if self.useSingleSuit:
+            self.rank.close()
+            self.singleSuit.close()
 
 if __name__ == '__main__':
     config = ConfigParser.RawConfigParser()

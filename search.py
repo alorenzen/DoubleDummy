@@ -12,9 +12,10 @@ class Search:
         self.useTable = config.useTable
         self.useSingleSuit = config.useSingleSuit
         self.sortActions = config.sortActions
-        self.table = config.transTable
-        self.rank = config.rank
-        self.single_suit = config.singleSuit
+        if self.useTable:
+            self.table = config.transTable
+        if self.useSingleSuit:
+            self.single_suit = config.singleSuit
 
 
     def ddsearch(self,game_state,goal,indent):
@@ -70,14 +71,14 @@ class Search:
         return False
 
     def search(self,state):
-        if self.useSingleState:
+        if self.useSingleSuit:
             low=self.single_suit.single_suit_analysis(state)
         else:
             low=0
         high=state.tricks_left()+1
         while low+1<high:
             goal = (low+high)/2
-            print goal
+            #print goal
             if self.ddsearch(state,goal,0):
                 low = goal
             else:
