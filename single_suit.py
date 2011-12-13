@@ -8,7 +8,7 @@ class SingleSuit:
 
     def __init__(self,config,rank):
         self.rank = rank
-        self.table = PersistentDict(config.get('Search','single_suit'))
+        self.table = PersistentDict(config.get('Search','single_suit'),mode=0666)
 
     def single_suit_analysis(self,game_state):
         hands = self.rank.relative_hands(game_state)

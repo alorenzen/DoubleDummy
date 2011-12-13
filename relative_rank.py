@@ -3,7 +3,7 @@ from game_state import *
 
 class RelativeRank:
     def __init__(self,config):
-        self.table = PersistentDict(config.get('Search','relative_rank'))
+        self.table = PersistentDict(config.get('Search','relative_rank'),mode=0666)
 
     def relative_hands(self,game_state):
         hands = {}

@@ -24,7 +24,11 @@ class TranspositionTable:
   so we simply use repr(game_state)
   """
   def __init__(self,config):
-    self.table = gdbm.open(config.get('Search', 'transposition_table'),'cf')
+    self.persistent = config.getboolean('Test','save_transposition_table')
+    if self.persistent:
+      self.table = gdbm.open(config.get('Search', 'transposition_table'),'cf')
+    else:
+      self.table = {}
   
 
   def checkCache(self,game_state):
@@ -42,6 +46,7 @@ class TranspositionTable:
           self.table[repr(game_state)] = str(newTricks)
 
   def close(self):
+    if self.persistent:
       self.table.close()
 
 if __name__ == '__main__':

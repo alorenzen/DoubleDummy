@@ -9,6 +9,9 @@ from transposition_tables import TranspositionTable
 class Search:
 
     def __init__(self,config):
+        self.useTable = config.useTable
+        self.useSingleSuit = config.useSingleSuit
+        self.sortActions = config.sortActions
         self.table = config.transTable
         self.rank = config.rank
         self.single_suit = config.singleSuit
@@ -21,11 +24,12 @@ class Search:
         team to take goal number of tricks
         """
         player = game_state.get_next_player()
-        if self.table.checkCache(game_state) >= goal:
+        if self.useTable and self.table.checkCache(game_state) >= goal:
             return True
         if game_state.tricks_left() == 1:
             if game_state.team_win_last_trick(Player.TEAM[player]):
-                self.table.saveToCache(game_state,1)
+                if self.useTable:
+                    self.table.saveToCache(game_state,1)
                 return True
             else:
                 return False
@@ -33,18 +37,21 @@ class Search:
             return True
         if goal > game_state.tricks_left():
             return False
-        if game_state.is_new_trick():
+        if self.useSingleSuit and game_state.is_new_trick():
             tricks = self.single_suit.single_suit_analysis(game_state)
             if tricks >= goal:
-                self.table.saveToCache(game_state,goal)
+                if self.useTable:
+                    self.table.saveToCache(game_state,goal)
                 return True
     
-        actions = sorted(game_state.get_actions_for_player(player),reverse=True,key=lambda x:x.value)
+        if self.sortActions:
+            actions = sorted(game_state.get_actions_for_player(player),
+                             reverse=True,
+                             key=lambda x:x.value)
+        else:
+            actions = game_state.get_actions_for_player(player)
         for action in actions:
-            log = (" " * indent) + str(action)
-            #print log
             next_state = game_state.play_card(action)
-            #next_state.hands = self.rank.relative_hands(next_state)
             if game_state.state_switch_teams(next_state):
                 next_goal = game_state.tricks_left() - goal + 1
                 if next_state.is_new_trick():
@@ -57,13 +64,16 @@ class Search:
                     next_goal = goal
                 result = self.ddsearch(next_state,next_goal,indent+2)
             if result:
-                self.table.saveToCache(game_state,goal)
+                if self.useTable:
+                    self.table.saveToCache(game_state,goal)
                 return True
         return False
 
     def search(self,state):
-        #state.hands = self.rank.relative_hands(state)
-        low=self.single_suit.single_suit_analysis(state)
+        if self.useSingleState:
+            low=self.single_suit.single_suit_analysis(state)
+        else:
+            low=0
         high=state.tricks_left()+1
         while low+1<high:
             goal = (low+high)/2
