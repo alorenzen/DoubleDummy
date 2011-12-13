@@ -1,3 +1,5 @@
+import sys
+
 from configuration import *
 from game_state import *
 from search import *
@@ -39,6 +41,7 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"n", total_clock, total_time)
+            sys.stdout.flush()
 
             start_clock = clock()
             start_time = time()
@@ -48,6 +51,7 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"s", total_clock, total_time)
+            sys.stdout.flush()
 
             table_config.table.clear()
             start_clock = clock()
@@ -58,6 +62,7 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"t", total_clock, total_time)
+            sys.stdout.flush()
 
             start_clock = clock()
             start_time = time()
@@ -67,6 +72,7 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"st", total_clock, total_time)
+            sys.stdout.flush()
 
             start_clock = clock()
             start_time = time()
@@ -76,6 +82,7 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"al", total_clock, total_time)
+            sys.stdout.flush()
 
             start_clock = clock()
             start_time = time()
@@ -85,3 +92,4 @@ if __name__ == '__main__':
             total_clock = stop_clock - start_clock
             total_time = stop_time - - start_time
             print "%d %d %s %f %f" % (i,j,"als", total_clock, total_time)
+            sys.stdout.flush()
