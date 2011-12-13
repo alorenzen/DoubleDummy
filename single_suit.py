@@ -1,3 +1,4 @@
+from configuration import *
 from game_state import *
 from random_deal import *
 from relative_rank import *
@@ -5,12 +6,12 @@ from persistent_dictionary import PersistentDict
 
 class SingleSuit:
 
-    def __init__(self):
-        self.rank = RelativeRank()
-        self.table = PersistentDict('single_suit.dat')
+    def __init__(self,config,rank):
+        self.rank = rank
+        self.table = PersistentDict(config.get('Search','single_suit'))
 
     def single_suit_analysis(self,game_state):
-        hands = self.rank.relative_hands(state)
+        hands = self.rank.relative_hands(game_state)
         player = game_state.get_next_player()
         try:
             return self.table[(repr(hands),player)]
@@ -96,11 +97,12 @@ class SingleSuit:
 
 
 if __name__ == '__main__':
-    single_suit = SingleSuit()
+    config = Configuration('search_config.cfg')
+    single_suit = config.singleSuit
     for i in range(1,14):
         for j in range(1,10000):
             print "%d-%d" % (i,j)
             hand = Randomhand(i).deal
             state = GameState.create_initial(hand)
             single_suit.single_suit_analysis(state)
-    single_suit.close()
+    config.close()

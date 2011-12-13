@@ -1,70 +1,83 @@
 import os
 import sys
+from configuration import *
 from game_state import *
 from random_deal import Randomhand
-from single_suit import *
+from single_suit import SingleSuit
 from transposition_tables import TranspositionTable
 
-def ddsearch(game_state,goal,transTable):
-    """
-    given a game_state, determine whether
-    or not it is possible for current_player's 
-    team to take goal number of tricks
-    """
-    player = game_state.get_next_player()
-    if transTable.checkCache(game_state) >= goal:
-        return True
-    if game_state.tricks_left() == 1:
-        if game_state.team_win_last_trick(Player.TEAM[player]):
-            transTable.saveToCache(game_state,1)
-            return True
-        else:
-            return False
-    if goal <= 0:
-        return True
-    if goal > game_state.tricks_left():
-        return False
-    if game_state.is_new_trick():
-        tricks = sure_tricks(game_state)
-        if tricks >= goal:
-            transTable.saveToCache(game_state,goal)
-            return True
-    
-    actions = game_state.get_actions_for_player(player)
-    for action in actions:
-        next_state = game_state.play_card(action)
-        if game_state.state_switch_teams(next_state):
-            next_goal = game_state.tricks_left() - goal + 1
-            if next_state.is_new_trick():
-                next_goal = next_goal - 1
-            result = not ddsearch(next_state,next_goal,transTable)
-        else: 
-            if next_state.is_new_trick():
-                next_goal = goal - 1
-            else:
-                next_goal = goal
-            result = ddsearch(next_state,next_goal,transTable)
-        if result:
-            transTable.saveToCache(game_state,goal)
-            return True
-    return False
+class Search:
 
-def search(state,transTable):
-    low=0
-    high=state.tricks_left()+1
-    while low+1<high:
-        goal = (low+high)/2
-        print goal
-        if ddsearch(state,goal,transTable):
-            low = goal
-        else:
-            high = goal
-    return low
+    def __init__(self,config):
+        self.table = config.transTable
+        self.rank = config.rank
+        self.single_suit = config.singleSuit
+
+
+    def ddsearch(self,game_state,goal,indent):
+        """
+        given a game_state, determine whether
+        or not it is possible for current_player's 
+        team to take goal number of tricks
+        """
+        player = game_state.get_next_player()
+        if self.table.checkCache(game_state) >= goal:
+            return True
+        if game_state.tricks_left() == 1:
+            if game_state.team_win_last_trick(Player.TEAM[player]):
+                self.table.saveToCache(game_state,1)
+                return True
+            else:
+                return False
+        if goal <= 0:
+            return True
+        if goal > game_state.tricks_left():
+            return False
+        if game_state.is_new_trick():
+            tricks = self.single_suit.single_suit_analysis(game_state)
+            if tricks >= goal:
+                self.table.saveToCache(game_state,goal)
+                return True
+    
+        actions = sorted(game_state.get_actions_for_player(player),reverse=True,key=lambda x:x.value)
+        for action in actions:
+            log = (" " * indent) + str(action)
+            #print log
+            next_state = game_state.play_card(action)
+            #next_state.hands = self.rank.relative_hands(next_state)
+            if game_state.state_switch_teams(next_state):
+                next_goal = game_state.tricks_left() - goal + 1
+                if next_state.is_new_trick():
+                    next_goal = next_goal - 1
+                result = not self.ddsearch(next_state,next_goal,indent+2)
+            else: 
+                if next_state.is_new_trick():
+                    next_goal = goal - 1
+                else:
+                    next_goal = goal
+                result = self.ddsearch(next_state,next_goal,indent+2)
+            if result:
+                self.table.saveToCache(game_state,goal)
+                return True
+        return False
+
+    def search(self,state):
+        #state.hands = self.rank.relative_hands(state)
+        low=self.single_suit.single_suit_analysis(state)
+        high=state.tricks_left()+1
+        while low+1<high:
+            goal = (low+high)/2
+            print goal
+            if self.ddsearch(state,goal,0):
+                low = goal
+            else:
+                high = goal
+        return low
 
 if __name__ == '__main__':
+    config = Configuration('search_config.cfg')
     try:
-        transpo_file = 'transposition_table.dat'
-        transTable = TranspositionTable(transpo_file)
+
         C = Suit.CLUBS
         D = Suit.DIAMONDS
         H = Suit.HEARTS
@@ -80,7 +93,9 @@ if __name__ == '__main__':
             state = GameState.create_initial(Randomhand(int(sys.argv[1])).deal)
         else:
             state = GameState.create_initial(start)
+
+        search = Search(config)
         print state.hands
-        print search(state,transTable)
+        print search.search(state)
     finally:
-        transTable.close()
+        config.close()

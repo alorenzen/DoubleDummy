@@ -2,8 +2,8 @@ from persistent_dictionary import PersistentDict
 from game_state import *
 
 class RelativeRank:
-    def __init__(self):
-        self.table = PersistentDict('relative_rank.dat')
+    def __init__(self,config):
+        self.table = PersistentDict(config.get('Search','relative_rank'))
 
     def relative_hands(self,game_state):
         hands = {}
