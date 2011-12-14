@@ -1,16 +1,19 @@
 from persistent_dictionary import PersistentDict
 from game_state import *
 
+#use this to find and make relatively ranked cards
+#stores data in a table to find relative ranks in a given suit
 class RelativeRank:
     def __init__(self,config):
         self.table = PersistentDict(config.get('Search','relative_rank'),mode=0666)
 
+        #convert hands to relative hands
     def relative_hands(self,game_state):
         hands = {}
         for player,hand in game_state.hands.iteritems():
             hands[player] = [self.relative_rank(game_state,card) for card in hand]
         return hands
-
+    #find the relative rank by applying the state_of_suit binary number generator
     def relative_rank(self,game_state, card):
         state_of_suit = game_state.get_state_of_suit(card.suit)
         return Card(card.suit,self.get_relative_rank(state_of_suit,card.value))
