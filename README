@@ -2,10 +2,6 @@ A double dummy bridge solver which will predict the number of tricks taken by a 
 
 The crux of the code is in search.py. This is where, given a starting game state, the program will predict how many cards can be taking by the starting team.
 
-Running 
-```bash
-python search.py 7
-```
-will run a search over a random deal with hands of size 7 cards. 
+Running `python search.py 7` will run a search over a random deal with hands of size 7 cards. 
 
 testSearch.py contains the code for our experiments. This runs many searches over different sizes of hands, each time comparing the different optimizations that we have implemented. This set of optimizations used, as well as the location of various dictionaries, can be configured in search_configure.cfg.
