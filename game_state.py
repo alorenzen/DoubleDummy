@@ -77,12 +77,14 @@ class Trick:
         if self.suit == None:
             self.suit = card.suit
 
+#if there are no more cards left this round, start the next trick
     def is_new_trick(self):
         return len(self.cards) == 0
 
     def finished(self):
         return len(self.cards) == 4
 
+#see who won the trick!
     def winner(self):
         winning_card = max([x for x in self.cards.keys() if x.suit == self.suit],
                            key=lambda x: x.value)
@@ -92,11 +94,13 @@ class Trick:
 
 class GameState:
     def __init__(self, prevState = None):
+        #if you have no previous state to reference, copy the old one
         if prevState != None:
             self.hands = prevState.hands.copy()
             self.next_player = prevState.next_player
             self.current_trick = Trick(prevState.current_trick)
         else:
+            #if you do, then reset hands, tricks and default the next player to West
             self.hands = {}
             self.next_player = Player.WEST
             self.current_trick = Trick()
@@ -139,17 +143,21 @@ class GameState:
             return followSuit
 
     def play_card(self,card):
+        #if the card you want to play cannot be played, raise and exception and print information about it
         if card not in self.get_actions():
             print self.next_player,self.hands[self.next_player],card,self.current_trick
             raise CardNotPlayable()
+        #otherwise update the current hand and state
         current_hand = self.hands[self.next_player]
         nextState = GameState(self)
         nextState.hands[self.next_player] = [x for x in current_hand if x != card]
         nextState.current_trick.play_card(card,self.next_player)
+        #if the hand is done, find the winner and move to the next trick
         if nextState.current_trick.finished():
             nextState.next_player = nextState.current_trick.winner()
             nextState.current_trick = Trick()
         else:
+            #otherwise, let the next player play his card
             nextState.next_player = Player.NEXT[self.next_player]
         return nextState
 
@@ -172,6 +180,7 @@ class GameState:
     def switch_teams(self,old_player,new_player):
         return (old_player in Player.NS and new_player not in Player.NS) or (old_player not in Player.NS and new_player in Player.NS)
 
+    #returns a binary value representing the card
     def get_state_of_suit(self, suit):
         state = 0
         for player,hand in self.hands.iteritems():
@@ -182,6 +191,7 @@ class GameState:
 
 
 class Deal:
+    
     def __init__(self, hands, starting_player = Player.WEST):
         self.hands = hands
         self.starting_player = starting_player
