@@ -17,7 +17,7 @@ class Search:
         if self.useSingleSuit:
             self.single_suit = config.singleSuit
 
-
+    #DoubleDummy Search
     def ddsearch(self,game_state,goal,indent):
         """
         given a game_state, determine whether
@@ -25,8 +25,11 @@ class Search:
         team to take goal number of tricks
         """
         player = game_state.get_next_player()
+        
+        #if you've met your trick goal, return true
         if self.useTable and self.table.checkCache(game_state) >= goal:
             return True
+        
         if game_state.tricks_left() == 1:
             if game_state.team_win_last_trick(Player.TEAM[player]):
                 if self.useTable:
@@ -38,18 +41,24 @@ class Search:
             return True
         if goal > game_state.tricks_left():
             return False
+
+        #single suit analysis check
         if self.useSingleSuit and game_state.is_new_trick():
             tricks = self.single_suit.single_suit_analysis(game_state)
             if tricks >= goal:
+                #write any information that you learned to a file
                 if self.useTable:
                     self.table.saveToCache(game_state,goal)
                 return True
-    
+
+            #if you haven't yet sorted the actions
         if self.sortActions:
+            #do so
             actions = sorted(game_state.get_actions_for_player(player),
                              reverse=True,
                              key=lambda x:x.value)
         else:
+            #otherwise get the actions for the next player
             actions = game_state.get_actions_for_player(player)
         for action in actions:
             next_state = game_state.play_card(action)
@@ -70,6 +79,7 @@ class Search:
                 return True
         return False
 
+    #the actual search!
     def search(self,state):
         if self.useSingleSuit:
             low=self.single_suit.single_suit_analysis(state)
